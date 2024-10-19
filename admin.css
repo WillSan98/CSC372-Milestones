@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+.nav-panel{
+    background-color: grey;
+    width: 15%;
+    height: auto;
+    text-align: center;
+
+}
+#nav-title{
+    border-bottom: 3px solid black;
+}

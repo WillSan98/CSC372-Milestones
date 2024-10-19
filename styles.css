@@ -1,0 +1,197 @@
+body
+{
+    background-color: rgb(232, 210, 180);
+}
+header 
+{
+    display: flex;
+    background-image: url(images/Header.jpg);
+    justify-content: flex-start;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    margin: auto;
+    border-radius: 30px;
+}
+h1
+{
+    background-color: beige;
+    border: 5px solid rgb(232, 210, 180);
+    border-radius: 20px;
+}
+h2
+{
+    border: 5px solid rgb(232, 210, 180);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(186, 154, 110);
+}   
+h3
+{
+    border: 5px solid rgb(232, 210, 180);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(209, 175, 131);
+}
+h4
+{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+a
+{
+    display:flex;
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+img
+{
+    width: 300px;
+    height: 175px;;
+    border-radius: 5px;
+}
+footer
+{
+    display: flex;
+    justify-content: left;
+    font-style: italic;
+
+}
+input
+{
+    border-radius: 20px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+    width: 200px;
+}
+button
+{
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+.GoButton
+{
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    background-color: rgb(170, 169, 168);
+    margin-top: 43px;
+    margin-right: 7px;
+    height: 20px;
+
+}
+.Selections
+{
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+    justify-content: center;
+}
+.Options
+{
+    text-align: center;
+    font-weight:bold;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    padding: 20px;
+    margin: auto;
+    font-size: large;
+    justify-content: center;
+}
+.SplashScreen
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    background-color: tan;
+    background-image: url(images/classicStyle.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    height: 600px;
+    width: 1000px;
+}
+.SplashPhrase
+{
+    margin-left: 40px;
+    font-style: oblique;
+    font-size:x-large;
+    color: white;
+}
+.SplashContent
+{
+    margin-left: 40px;
+    font-size:large;
+    color: white;
+
+
+}
+.ShopButton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    font-size: medium;
+    font-weight: bold;
+    background-color:gold;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+.Icons
+{
+    border: 2px solid black;
+}
+.Products
+{
+    display: flex;
+    flex-direction: row;
+}
+.Filter
+{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    border: 2px solid black;
+    height: 180px;  
+    width: 110px;
+    background-color: beige;
+}
+.Listings
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+.Product
+{
+    width: 300px;
+    height: 360px;
+    border: 2px solid black;
+    margin: 15px;
+    background-color: beige;
+}
+.DetailsLink
+{
+    background-color: grey;
+    border-radius: 5px;
+    width: 65px;
+}
+
+
