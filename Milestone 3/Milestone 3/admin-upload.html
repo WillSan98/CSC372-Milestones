@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+  Name: William Sanders
+  Date: 10/19/2024  
+  CSC 372-01
+
+  This is the admin-upload.html page that allows users to upload product items in mass. The page prompts the user to submit the file as JSON, csv, or plain
+  file. A sample is provided to for the formatting of JSON and plain text files. The page also provides a file selection interface for pulling files from their
+  system.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Product Upload</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="admin.css">
+    </head>
+        <div class="nav-panel">
+            <h1 class="logo">
+                <a href="#" class="logo-link">Glasses Liquidation</a>
+            </h1>
+            <h1>
+                Navigation
+                
+            </h1>
+            <div class="nav-items">
+                <h2>
+                    Tickets:
+                    <ul>
+                        <li><a href="#">Request Board</a></li>
+                        <li><a href="#">Completed Tickets</a></li>
+                    </ul>
+                    Products:
+                    <ul>
+                        <li><a href="admin-upload.html">Bulk Upload</a></li>
+                        <li><a href="admin-products.html">Product List</a></li>
+                    </ul>
+                    Users:
+                    <ul>
+                        <li><a href="#">User List</a></li>
+                        <li><a href="#">Edit User</a></li>
+                        <li><a href="#">Deleted/Banned User List</a></li>
+                    </ul>
+                </h2>
+            </div>
+        </div>
+    <body>
+        <main>
+            <div class="title-bar">
+                <h1>
+                    Product Upload (Admin View)
+                </h1>
+            </div>
+            <div class="upload-description">
+                <p>You can upload bulk product data here for mass upload. Please ensure any file submitted is in JSON, CSV, or plain text file format before uploading.</p><br><br>
+                <p>
+                    Example formatting for JSON and plain text:<br><br>
+                    [<br>
+                        {<br>
+                            "name": "black matte frames",<br>
+                            "price": 15.99,<br>
+                            "color": "black",<br>
+                            "image": "images/blackmatteglasses.jpg",<br>
+                            "description": "Classic black frames with a matte finish.",<br>
+                            "category": "Womens"<br>
+                        }<br>
+                        {<br>
+                            "name": "blue glossy frames",<br>
+                            "price": 18.99,<br>
+                            "color": "blue",<br>
+                            "image": "images/blueglossyglasses.jpg",<br>
+                            "description": "Classic blue frames with a glossy finish.",<br>
+                            "category": "Womens"<br>
+                        }<br>
+                    ]<br>
+                </p>
+            </div>
+            <div class="upload">
+                <form method="post">
+                    <label for="file-prompt">Submit your JSON file here:</label><br>
+                    <input type="file"></input><br>
+                    <button>Submit</button>
+                </form>
+            </div>
+            <footer>
+                <p>Copyright 2024 Glasses Liquidation Emporium. All rights reserved.</p>
+            </footer>
+        </main>
+        <div class="toolbar">
+            <a href="#"><img src="images/p_icon.png" alt="settings"></a>
+            <a href="#"><img src="images/gear.png" alt="settings"></a>
+        </div>
+        <script src="admin-script.js" async defer></script>
+    </body>
+</html>

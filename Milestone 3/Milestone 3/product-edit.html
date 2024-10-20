@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+  Name: William Sanders
+  Date: 10/19/2024  
+  CSC 372-01
+
+  This is the product-edit.html page that provides a form for users to edit their product
+  information and resubmit to the listing. P-ID cannot be changed and images are "provided"
+  from the server via a dropdown menu. Otherwise, name, category, prices, and description can be modified.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Products</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="admin.css">
+    </head>  
+    <body>
+        <div class="nav-panel">
+            <h1 class="logo">
+                <a href="#" class="logo-link">Glasses Liquidation</a>
+            </h1>
+            <h1>
+                Navigation
+                
+            </h1>
+            <div class="nav-items">
+                <h2>
+                    Tickets:
+                    <ul>
+                        <li><a href="#">Request Board</a></li>
+                        <li><a href="#">Completed Tickets</a></li>
+                    </ul>
+                    Products:
+                    <ul>
+                        <li><a href="admin-upload.html">Bulk Upload</a></li>
+                        <li><a href="admin-products.html">Product List</a></li>
+                    </ul>
+                    Users:
+                    <ul>
+                        <li><a href="#">User List</a></li>
+                        <li><a href="#">Edit User</a></li>
+                        <li><a href="#">Deleted/Banned User List</a></li>
+                    </ul>
+                </h2>
+            </div>
+        </div>
+        <main>
+            <div class="title-bar">
+                <h1>
+                    Product Listing (Admin View)
+                </h1>
+            </div>
+            <button class="btn"><a href="admin-products.html" class="btn-link">Back</a></button>
+            <div class="product-container">
+                <div class="product-edit">
+                    <form action="post">
+                        <label>Image: </label><select name="Images">
+                            <option value="ImageNull">-</option>
+                            <option value="Image1">SlimGlasses.jpg</option>
+                            <option value="Image2">CateyeGlasses.jp</option>
+                            <option value="Image3">RoundGlasses.jpg</option>
+                        </select><br>
+                        <label>Product Name: </label><input type="text" name="productName" placeholder="Trendy Black Glasses"><br>
+                        <label>Product ID: </label><input type="text" name="productID" placeholder="02254" disabled="true"><br>
+                        <label>Product Category: </label><select name="productID">
+                            <option value="Null">-</option>
+                            <option value="Mens">Mens</option>
+                            <option value="Womens">Womens</option>
+                            <option value="Kids">Kids</option>
+                        </select><br>
+                        <label>Price: $</label><input type="text" name="productID" placeholder="10"><br>
+                        <label>Description: </label><input type="text" name="productID" placeholder=" Random trendy black glasses found in a dumpster."><br><br>
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <div class="toolbar">
+            <a href="#"><img src="images/p_icon.png" alt="settings"></a>
+            <a href="#"><img src="images/gear.png" alt="settings"></a>
+        </div>
+        <script src="admin-script.js" async defer></script>
+    </body>
+</html>
